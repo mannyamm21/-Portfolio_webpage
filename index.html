@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/38ddc46d45.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo1.png" class="logo">
+                <ul  id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="headertext">
+                <p>Web/Software Developer</p>
+                <h1>Hi, i'm <span class="name">Manyam</span> Chaitanya </h1>
+            </div>
+        </div>
+    </div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="user1.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p>Hello, my name is Manyam Chaitanya. I am currently pursuing a Bachelor's degree in Electronics and Communication Engineering. Along with my studies, 
+I have developed skills in programming languages such as Java, Python, HTML, CSS, and basic JavaScript. I have a keen interest in technology and enjoy learning new concepts related to my field of study. 
+Through my academic pursuits and practical experience,I aim to contribute to the development of innovative solutions that address real-world problems.</p>
+                    <div class="tabtitles">
+                        <p class="tablinks  activelink" onclick="opentab('skills')">Skills</p>
+                        <p class="tablinks" onclick="opentab('epxeri')">Experiencne</p>
+                        <p class="tablinks " onclick="opentab('Educ')">Education</p>
+                    </div>
+                    <div class="tabcontents activetab" id="skills" >
+                        <ul class="skilllogo"> 
+                            <li><span>Java</span></li>
+                            <li><span>MySQL</span></li>
+                            <li><span>Python (Basics)</span></li>
+                            <li><span>HTML / CSS (Beginner)</span></li>
+                            <li><span>JavaScript</span></li>
+                            <li><span>MongoDB</span></li>
+                            <li><span>Graphic Designing</span></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="tabcontents" id="epxeri">
+                        <ul>
+                            <li><span>June,2022 - Present</span><br> Graphic Designer at We Care Social Welfare Society (NGO) </li>
+                            <li><span>December,2021 - Present</span><br> Content Creator On Youtube </li>
+                        </ul>
+                    </div>
+                    <div class="tabcontents" id="Educ">
+                        <ul>
+                            <li><span>2020-2024</span><br> B.Tech (Electronics & Communication Engineering) at Lakshmi Narain College of Technology,Bhopal</li>
+                            <li><span>2019-2020 </span><br> PCM with Informatics Practices (XII-CBSE) at Shadra Vidya Mandir,Bhopal</li>
+                        </ul>
+                    </div>
+            </div> 
+        </div>
+    </div>
+</div>
+
+<!----services-->
+<div id="services">
+    <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Designer</h2>
+                <p >I am a beginning web designer who is learning HTML, CSS, and JavaScript while developing frontend designs for websites.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Graphic Designer</h2>
+                <p> As a part-time graphic designer, I currently work for an NGO and create the visuals for my YouTube channel.</p> 
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Java Developer</h2>
+                <p> As a Java programmer, I'm constantly learning new Java concepts and creating new projects that use SQL databases.</p>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<!--portfolio-->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle"> My Projects </h1>
+        <div class="work_list">
+            <div class="work">
+                <img src="work-111.png">
+                <div class="layer">
+                    <h3>Computer Retailer Store and  Maintenance</h3>
+                    <p>Computer Retailer store database management system that keeps track of the store's data and assists the owner in providing better service. - Java , MySql.</p>
+                    <a href="https://github.com/mannyamm21/computerstore" target=”_blank”><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-22.png">
+                <div class="layer">
+                    <h3>My Own Portfolio</h3>
+                    <p></p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-77.png">
+                <div class="layer">
+                    <h3>News WebPage</h3>
+                    <p>The News is a dynamic and interactive news webpage that harnesses the power of HTML, CSS, JavaScript, and the News API to provide users with a seamless and personalized news browsing experience.
+                        API Used: gnews.io</p>
+                    <a href="https://mannyamm21.github.io/TheNews_webpage_api/" target=”_blank”><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-44.png">
+                <div class="layer">
+                    <h3>Calculator</h3>
+                    <p>The calculator design project with HTML, CSS, and JavaScript aims to create a functional calculator interface on a web page. 
+The HTML structure defines the display and buttons of the calculator, while CSS is used to style and layout the elements. </p>
+                    <a href="https://mannyamm21.github.io/Calculator/" target=”_blank”><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-55.png">
+                <div class="layer">
+                    <h3>StopWatch</h3>
+                    <p>The stopwatch project is a web-based application created using HTML, CSS, and JavaScript. 
+It provides a functional stopwatch with buttons to start, pause, and reset the timer.</p>
+                    <a href="https://mannyamm21.github.io/StopWatch/" target=”_blank”><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-66.png">
+                <div class="layer">
+                    <h3>Analog Clock</h3>
+                    <p>The analog clock project is a web-based application created using HTML, CSS, and JavaScript.
+ It displays a clock with hour, minute, and second hands, mimicking a traditional analog clock</p>
+                    <a href="https://mannyamm21.github.io/Analog-Clock/" target=”_blank”><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!----contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i>manyamchaitanya2013@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91-9575370423</p>
+                <div class="social-icons">
+                    <a  href="https://www.instagram.com/manyamm._/" target=”_blank”><i class="fa-brands fa-instagram"></i></a>
+                    <a  href="https://www.linkedin.com/in/manyam-chaitanya-24715821a/" target=”_blank”><i class="fa-brands fa-linkedin"></i></a>
+                    <a  href="https://github.com/mannyamm21" target=”_blank”><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="ManyamChaitanyaResume .pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="copyright">
+        <p>Copyright © Manyam's Portfolio</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tablinks");
+    var tabcontents = document.getElementsByClassName("tabcontents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("activelink");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("activetab");
+        }
+        event.currentTarget.classList.add("activelink");
+        document.getElementById(tabname).classList.add("activetab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyP9-IDahaXdqjQnVpoATnObsAf2z-Sk4gIYO5vLkTHTJbklhReoLt7-HYi2i2864qa/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }
+                ,3000)
+                form.reset()
+            
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+
+  </script>
+</body>
+</html>
